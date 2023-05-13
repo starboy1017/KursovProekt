@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <ul class = "navbar">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#staff">Staff</a></li>
+    <li><a href="#price">Calculate Price</a></li>
+  </ul>
+
+  <div class="hero-sectioner">
+    <div class="hero-lefter">
+      <h1>BN Security</h1>
+      <p>Your safety is our priority.</p>
+      <a href="tel:+0889118088" class="btn">Learn More</a>
+    </div>
+    <div class="hero-righter">
+      <img class="imger" src="heroimage.jpg" alt="Hero Image">
+    </div>
+  </div>
+  
+  <div id="summary"> 
+  <h2>Съдържание</h2>
+   <ul>
+    <li>Информация за БНС</li>
+    <li>Услуги</li>
+    <li>Пресметни своя абонамент</li>
+  </ol>
+</div>
+
+   <p>“БН Секюрити” е охранителна фирма, която предлага своите услуги из цялата страна!
+
+    Нашата главна цел е да осигурим безопасността на своите клиенти!<p>
+  
+     <br>
+     <br>
+     <br>
+
+
+
+
+    <div id="staff">
+    <div class="card">
+      <img src="vasililiev.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Vasil Iliev</b></h4> 
+        <p>Founder of the company</p> 
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="polipantev.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Poli Pantev</b></h4> 
+        <p>Chief Executive Officer</p> 
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="stoyankolev.jpg" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Stoyan Kolev</b></h4> 
+        <p>Head Security Team</p> 
+      </div>
+    </div>
+  </div>
+
+  
+    <div id = "price">
+   <h2>Пресметни своя абонамент</h2>
+            <label for="fname">Въведи броя месеци, за които искаш абонамент</label><br>
+            <input type="number" id="months" name="fname" value="Months"><br>
+            <button onclick="calculate()"> Пресметни месеците! </button>
+         
+          <h4>Обща стойност в левове:</h4>
+          <h4 id="sum">0</h4>
+        </div>
+
+          <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Company Name © 2018</p>
+            </footer>
+        </div>
+
+          <script>
+            const monthPrice = 30;
+            let months = 0;
+            let sum = 0;
+            function calculate()
+            {
+             let theresult = document.getElementById("sum")
+             months = document.getElementById("months").value
+             let total = months * monthPrice
+             theresult.textContent = total
+            }
+
+          </script>
+</body>
+</html>

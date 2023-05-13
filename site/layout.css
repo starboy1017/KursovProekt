@@ -1,0 +1,185 @@
+body{
+    background-color:  #333333;
+    color:#e5e5e5;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+text-align: center;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+    border:1px solid; color:#872642;
+    color: #FFCC66;
+    text-align: center;
+
+  }
+  .newspaper {
+    font: size 10px;
+    column-count: 3;
+color:#FFCC66;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+
+.widther{
+  width:100%;
+  text-align: center;
+  color:#e5e5e5;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: 2px solid;color: #e5e5e5
+
+}
+
+h1{
+ color:#FFCC66;
+ text-align: center;
+ font: size 100px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar{
+  border: 2px solid; color:#FFCC66;
+  border-radius: 25px;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage.jpg");
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-sectioner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #272727;
+
+}
+
+.hero-lefter {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-righter {
+  flex: 1;
+  max-width: 50%;
+  text-align: right;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #990000;
+}
+
+@media (max-width: 767px) {
+  h4{
+  font-size: medium;
+  }
+  h1{
+  font-size: 30px;
+  }
+  .hero-righter {
+    flex: 1;
+    text-align: right;
+  }
+  .imger{
+    width: 300px;
+    height: 300px;
+  }
+}
